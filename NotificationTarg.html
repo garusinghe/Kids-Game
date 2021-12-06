@@ -1,0 +1,156 @@
+<html>
+<head>
+
+<style>
+
+
+body{
+  background:#ddd;
+  font-family:"Releway";
+
+}
+.center{
+
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+}
+.popup{
+ 
+ width:500px;
+ height:550px;
+ padding:30px 20px;
+ background:white;
+ border-radius:10px;
+ box-sizing:border-box;
+ z-index:2;
+ text-align:center;
+ opacity:0;
+ top:-200%;
+ transform:translate(-50%,-50%) scale(0.5);
+ transition:opacity 300ms ease-in-out,
+                     top 1000ms ease-in-out,
+					 transform 1000ms ease-in-out;
+ 
+}
+
+.popup .active{
+
+ opacity:1;
+ top:50%;
+  transform:translate(-50%,-50%) scale(1);
+  transition:transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+
+.IMG{
+  
+   height:250px;
+}
+
+.popup .title{
+
+ margin:5px 0px;
+ font-size:30px;
+ font-weight:600;
+
+}
+
+.popup .description{
+
+ color:#222;
+ font-size:15px;
+ padding:5px;
+
+}
+
+.popup .dismisss-btn{
+
+ margin-top:15px;
+
+}
+
+.popup .dismisss-btn button{
+
+ padding:10px 20px;
+ background:#111;
+ color:#f5f5f5;
+ border:2px solid #111;
+ font-size:16px;
+ outline:none;
+ border-radius:10px;
+ cursor:pointer;
+ transition:all 300ms ease-in-out;
+
+}
+
+.popup .dismisss-btn button:hover{
+
+ color:#111;
+ background:#f5f5f5;
+
+}
+
+
+<script>
+
+ document.getElementById("open-popup-btn").addEventListener("click",function(){
+ 
+   document.getElementsByClassName("popup") [0].classList.add("active");
+ 
+ 
+ });
+ 
+ document.getElementById("dismiss-pop-btn").addEventListener("click",function(){
+ 
+   document.getElementsByClassName("popup") [0].classList.remove("active");
+ 
+ 
+ });
+
+
+</script>
+</style>
+
+
+
+</head>
+
+<body>
+
+<div class="popup center">
+
+   <div class="icon">
+   
+    <i class="fa fa-check"></i>
+   
+   </div>
+   
+   <div class="title">
+   Coungratulation !!! you Won
+   </div>
+   <br>
+   <div class="description">
+   
+    The Panda bear is a large mammal native to central China. These bears are also known as giant pandas, or simply pandas. Though they famously dine on bamboo, pandas are bears, and scientists still classify them as carnivores. While they will occasionally feed on eggs, rodents, or birds, over 99% of this bear’s diet comes from bamboo plants.
+   
+     
+   </div>
+  <br>
+  <div class="dismisss-btn">
+  
+  <button id="dismiss-pop-btn">Dismiss</button> <br><br>
+  
+  <img class="IMG" src="C:\Users\Supunthaka\Desktop\projject\congra.PNG">
+  </div>
+
+</div>
+
+<div class="center">
+<button id="open-popup-btn">Open Popup</button>
+</div>
+
+</body>
+
+</html>

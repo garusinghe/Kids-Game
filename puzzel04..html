@@ -1,0 +1,314 @@
+<html>
+<head>
+</head>
+<title>Gicso puzzel</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+<style>
+
+
+  
+  
+#container{
+ position:absolute;
+ top:110px;
+ left:18%;
+ width:850px;
+ border:2px solid black;
+ border-radius:20px;
+ margin:10px auto;
+ padding:10px;
+}
+
+#pieceContainer{
+
+ width:408px;
+ height:408px;
+ border:1px solid black;
+ float:left;
+ text-align:center;
+ font-size:30px;
+ line-height:400px;
+ position:relative;
+
+}
+
+#puzzelContainer{
+
+ width:408px;
+ height:408px;
+ border:1px solid black;
+ float:right;
+}
+
+ul{
+
+  list-style-type:none;
+  text-align:center;
+
+}
+ul button{
+
+ width:100px;
+ border:1px solid black;
+ font-size:20px;
+ border-radius:5px;
+ padding:5px;
+ margin-top:10px;
+
+}
+
+#btnReset{
+ display:none;
+}
+
+.piece{
+
+ width:100px;
+ height:100px;
+ border:1px solid black;
+ float:left;
+ background-image:url(jungel.jpg);
+ background-repeat:no-repeat;
+}
+
+#title{
+
+  color:yellow;
+  position:absolute;
+  top:10%;
+  left:20%;
+  font-size:30px;
+  font-weight:bold;
+  
+}
+
+#BACK{
+ 
+  position:relative;top:555px;left:30px;
+  border:1px solide white;
+  width:130px;
+  height:30px;
+  text-align :center;
+  line-height:30px;
+  box-shadow:white 5px 0px 15px 0px;
+}
+#BACK a{text-decoration:none;color:white;}
+
+#Level4{
+
+  color:#FF0099;
+  font-size:40px;
+  font-weight:bold;
+
+}
+
+body {
+  
+  background: rgb(70, 23, 94);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 23, 94, 0.9836309523809523) 3%,
+    rgba(177, 206, 218, 1) 44%,
+    rgba(70, 186, 217, 1) 100%
+)};
+
+
+
+
+
+</style>
+
+<script>
+
+//create rows and columns using 2 loops
+$(document).ready(function(){
+
+  
+  var pieces = createPieces(true);
+  //add the piece to puzzelContainer
+  $("#puzzelContainer").html(pieces);
+  $("#btnStart").click(function(){
+  //cret array and call all dive tags togather
+     var pieces = $("#puzzelContainer div");
+	 pieces.each(function(){
+	  
+	   var leftPosition = Math.floor(Math.random()*290) + "px";
+	   var topPosition = Math.floor(Math.random()*290) + "px";
+	   $(this).addClass("draggablePiece").css({
+	   
+	     position: "absolute",
+		 left:leftPosition,
+		 top:topPosition 
+	   })
+	   $("#pieceContainer").append($(this));
+	   
+	 });
+	 
+	 //create empty space in puzzelContainer
+	  var emptyString = createPieces(false);
+	  
+  
+  $("#puzzelContainer").html(emptyString);
+  $(this).hide();
+  $("#btnReset").show(); 
+  
+  implementLogic()
+  });
+  
+  
+  //chek soled puzzel
+  function chekIfPuzzelSolved()
+  
+  {
+     if($("#puzzelContainer .droppedPiece").length !=16)
+	 
+	 {
+	   return false;
+	 }
+	 
+	 //Game is sold correctly
+	 for(var k=0;k<16;k++)
+	 {
+	   var item = $("#puzzelContainer .droppedPiece:eq(" + k + ")");
+	   
+	   var order = item.data("order");
+	   
+	   if(k != order)
+	   {
+	     $("#pieceContainer").text("Ouch  Try Againe!");
+		 return false;
+	   
+	   }
+	 
+	 }
+     $("#pieceContainer").text("Jungle is our kindom")
+	 return true;
+  }
+   
+   //after the playin game reset agine
+   $("#btnReset").click(function()
+   {
+     var newPieces = createPieces(true);
+	 
+	 $("#puzzelContainer").html(newPieces);
+	 $(this).hide();
+	 $("#btnStart").show();
+	 $("#pieceContainer").empty();
+     
+   });
+   
+   function createPieces(withImage)
+   
+   {
+     var rows = 4,columns = 4;
+     var pieces = "";
+	 
+      for(var i=0,top=0,order=0;i<rows;i++,top-=100)
+      {
+         for(var j=0,left=0;j<columns;j++,left-=100,order++)
+		 {
+		   if(withImage)
+		   {
+		     pieces += "<div style='background-position:" + left + "px " + top + "px; ' class='piece' data-order=" + order + "></div>";
+		   
+		   }
+		   else
+		   
+		   {
+		    pieces += "<div style='background-image:none;' class='piece droppableSpace'></div>";
+		   }
+		  
+		 }
+	 
+	        
+	   }
+      
+     return pieces;
+   }
+   
+   //that is draggLogic peisec to puzzel container
+   function implementLogic()
+   {
+   //drag and drop
+     $(".draggablePiece").draggable({
+	 
+	 //dragg tow images to same places it got to agine original position
+	   revert:"invalid",
+	   
+	   start:function(){
+	   
+	    if($(this).hasClass("droppedPiece"))
+		{
+		  $(this).removeClass("droppedPiece");
+		  $(this).parent().removeClass("piecePresent")
+		}
+	   
+	   }
+	 
+	 });
+	 $(".droppableSpace").droppable({
+	 
+	 //hightlight emptuy bok with drop
+	  hoverClass: "ui-state-highlight",	 
+	  
+	  accept:function(){
+	  
+	   return  !$(this).hasClass("piecePresent")
+	  },
+	  
+	 	   drop:function(event,ui)
+	   {
+	     var draggableElement = ui.draggable;
+		 var droppedOn = $(this);
+		 droppedOn.addClass("piecePresent");
+		 
+		 $(draggableElement)
+		 .addClass("droppedPiece")
+		 .css({
+		   
+		   top:0,
+		   left:0,
+		   position:"relative"
+		   
+		 }).appendTo(droppedOn);
+		 
+		 //puzzel correct or not
+		 
+		 chekIfPuzzelSolved();
+	   }
+	 
+	 });
+   
+   }
+});
+
+
+
+</script>
+
+</head>
+
+<div id="title"> Are You Ready Let's START  </div>
+<div id="Level4">LEVEL 04</div>
+
+<div id="container">
+<div id="pieceContainer"></div>
+<div id="puzzelContainer"></div>
+
+<ul id="buttons">
+<li><button id="btnStart">Start</button></li>
+<li><button id="btnReset">Reset</button></li>
+</ul>
+</div>
+
+<div id="BACK"><a href="C:\Users\Supunthaka\Desktop\Final Project\Puzzel.html">Back</a></div>
+</body>
+
+</html>

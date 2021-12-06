@@ -1,0 +1,322 @@
+<html>
+<head>
+<title>Hppy Game</title>
+<style>
+
+*{margin:0;}
+#backgroundImage{
+
+  background-image:url("Homebackgrund.jpg");
+  background-size:cover;
+  width:100%;
+  height:100%;
+}
+
+#transparent-one{
+
+  width:90%;
+  height:90%;
+  box-shadow:aqua 0px 0px 30px 0px;
+  background-color:rgba(0,0,0,.3);
+  background-blend-mode:overlay;
+  margin-left:65px;
+  
+}
+
+#transparent-two{
+
+  width:100%;
+  height:85%;
+  box-shadow:aqua 0px 0px 30px 0px;
+  background-color:rgba(0,0,0,.6);
+  background-blend-mode:overlay;
+  
+}
+#Gname{
+
+  color:white;
+  font-size:30px;;
+  letter-spacing:10px;
+  position:relative;top:15px;left:500px;
+   
+}
+
+span{
+   display:inline-block;
+   font-weight:bolder;
+   animation:mover 6s linear infinite;
+   color:white;
+   
+}
+
+@keyframes mover{
+   0%{
+    filter:blur(2px);
+    text-shadow:0  0  10px #00b3ff;
+                0  0  20px #00b3ff;
+				0  0  40px #00b3ff;
+                0  0  800px #00b3ff;
+                0  0  120px #00b3ff;
+                0  0  200px #00b3ff;
+                0  0  300px #00b3ff;
+                0  0  400px #00b3ff;
+                0  0  500px #00b3ff;				
+   }
+   
+   50%{
+   
+    text-shadow:0  0  30px none;
+	transform:translateY(30px);
+     filter:blur(0px);
+	 color:#111;
+   }
+   
+   100%{
+   
+    text-shadow:0  0  30px #00b3ff;
+     color:#111;
+   }
+
+}
+
+span:nth-child(1)
+{
+  animation-delay:0.5s;
+}
+span:nth-child(2)
+{
+  animation-delay:1s;
+}
+span:nth-child(3)
+{
+  animation-delay:1.5s;
+}
+span:nth-child(4)
+{
+  animation-delay:2s;
+}
+span:nth-child(5)
+{
+  animation-delay:2.5s;
+}
+span:nth-child(6)
+{
+  animation-delay:3s;
+}
+span:nth-child(7)
+{
+  animation-delay:3.5s;
+}
+span:nth-child(8)
+{
+  animation-delay:4s;
+}
+span:nth-child(9)
+{
+  animation-delay:4.5s;
+}
+span:nth-child(10)
+{
+  animation-delay:5s;
+}
+span:nth-child(11)
+{
+  animation-delay:5.5s;
+}
+span:nth-child(12)
+{
+  animation-delay:s;
+}
+
+
+
+#homeButan{
+ 
+  position:relative;top:100px;left:150px;
+  border:1px solide white;
+  width:120px;
+  height:30px;
+  text-align :center;
+  line-height:30px;
+  box-shadow:white 5px 0px 15px 0px;
+}
+
+#homeButan a{text-decoration:none;color:white;}
+
+#homeButan:hover{
+  
+   background-color:aqua;
+   cursor:pointer;
+   letter-spacing:5px;
+   font-weight:bold;
+   box-shadow:white 5px 0px 50px 0px;
+   transform:translateY(18px);
+   transition:transform 1s;
+   box-shadow:white 3px 0px 10px 0px;
+   cursor:pointer;
+}
+#homeButan a:hover{color:red;}
+
+
+#GameButan ul{
+
+   list-style:none;
+   color:white;
+}
+
+#GameButan ul ul a{
+
+ text-decoration:none;
+ color:white;
+}
+
+#GameButan ul ul{display:none;}
+#GameButan ul li:hover ul{display:inline;}
+#GameButan ul li:hover{line-height:35px;color:red;width:190px;}
+#GameButan ul li a:hover{color:aqua;}
+
+#GameButan{
+   box-shadow:white 5px 0px 10px 0px;
+   border:1px solide white;
+   width:130px;
+   height:29px;
+   line-height:30px;
+   position:relative;top:230px;left:150px;
+}
+
+#GameButan :hover{
+
+ background-color:aqua;
+ cursor:pointer;
+ box-shadow:white 5px 0px 30px 0px;
+ 
+}
+
+
+#AboutButtan{
+ 
+  position:relative;top:125px;left:148px;
+  border:1px solide white;
+  width:130px;
+  height:30px;
+  text-align :center;
+  line-height:30px;
+  box-shadow:white 5px 0px 15px 0px;
+}
+
+#AboutButtan a{text-decoration:none;color:white;}
+
+#AboutButtan:hover{
+  
+   background-color:aqua;
+   cursor:pointer;
+   letter-spacing:5px;
+   font-weight:bold;
+   box-shadow:white 5px 0px 50px 0px;
+  
+}
+#AboutButtan a:hover{color:red;}
+
+#text{
+
+  color:white;
+  font-size:18px;
+  position:relative;top:290px ; left :50px;
+
+}
+
+
+.box{
+ 
+ width:1236px;
+ height:100px;
+ box-shadow:white 5px 0px 10px 0px;
+ margin-left:66px;
+ border-radius:5px;
+ }
+ 
+ .box:hover{
+ 
+   background-color:white;
+ }
+ 
+ .box-inside{
+  
+   width:1000px;
+   height:70px;
+   box-shadow:red 3px 0px 10px 0px;
+   color:white;
+   border-redius:5px;
+   line-height:30px;
+   text-align:center;
+   position:relative;top:15px;left:65px;   
+ }
+ 
+ .box-inside:hover{
+ 
+   background-color:aqua;
+   cursor:pointer;
+   box-shadow:white 5px 0px 30px 0px;
+   color:black;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<audio autoplay loop=infinite>
+<source src="C:\Users\Supunthaka\Desktop\projject\Music\back.mp3" type="audio/mp3">
+<source src="C:\Users\Supunthaka\Desktop\projject\Music\back.wav" type="audio/wav">
+</audio>
+ 
+<div id="backgroundImage">
+
+<div id="transparent-one">
+<div id="transparent-two">
+
+<div id="Gname">
+<span>M</span>
+<span>I</span>
+<span>N</span>
+<span>D</span>
+<span></span>
+<span>T</span>
+<span>H</span>
+<span>E</span>
+<span>R</span>
+<span>A</span>
+<span>P</span>
+<span>Y</span>
+</div>
+
+
+<div id="homeButan"><a href="#">HOME</a></div>
+<div id="GameButan">
+
+<ul>
+<li>Games<ul>
+<li><a href="C:\Users\Supunthaka\Desktop\Final Project\MemoryMatching.html">Memory Match
+</a></li>
+<li><a href="C:\Users\Supunthaka\Desktop\Final Project\Puzzel.html">Puzzel Match</a></li>
+<li><a href="C:\Users\Supunthaka\Desktop\Final Project\MthasLevels.html">Mathamatics</a></li>
+</ul></li>
+</ul>
+</div>
+
+
+<div id="AboutButtan"><a href="C:\Users\Supunthaka\Desktop\Final Project\AboutGame\about.html">About Game</a></div>
+
+
+
+</div>
+</div>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<Html>
+<HEAD>
+
+<script>
+
+var seconds=0;
+function dispalysecond()
+{
+  seconds +=1;
+  
+  document.getElementById("timecount").innerText="Lest' go to game"+seconds+" seconds.......";
+}
+setInterval(dispalysecond,1100);
+
+
+function redirectpage()
+{
+  window.location="file:///C:/Users/Supunthaka/Desktop/projject/Home.html";
+
+}
+
+setTimeout('redirectpage()',10300);
+
+</script>
+
+
+<title>First page</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+body{
+
+  background:black;
+}
+
+video{
+
+   position:absolute;
+   top:50%;
+   transform:translateY(-50%);
+   
+
+}
+
+.text{
+
+  width:80%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  display:flex;
+  
+}
+.text span{
+
+  color:red;
+  text-align:center;
+  font-weight:800;
+  font-size:50px;
+  color:#777;
+  transition:3s;
+  -webkit-transition:1s;
+  -moz-transition:1s;
+  animation:reveal 3.9s linear forwards;
+  opacity:0;
+  filter:blur(13px);
+
+}
+
+@keyframes reveal{
+
+    100%{
+	  opacity:1;
+	  filter:blur(0);
+	}
+}
+
+span:nth-child(1)
+{
+  animation-delay:0.7s;
+  -webkit-animation-delay:0.7s;
+  -moz-transition-delay:0.7s;
+}
+span:nth-child(2)
+{
+  animation-delay:1.4s;
+  -webkit-animation-delay:1.4s;
+  -moz-transition-delay:1.4s;
+}
+span:nth-child(3)
+{
+  animation-delay:2.1s;
+  -webkit-animation-delay:2.1s;
+  -moz-transition-delay:2.1s;
+}
+span:nth-child(4)
+{
+  animation-delay:2.8s;
+  -webkit-animation-delay:2.8s;
+  -moz-transition-delay:2.8s;
+}
+
+span:nth-child(5)
+{}
+
+span:nth-child(6)
+{
+  animation-delay:3.5s;
+  -webkit-animation-delay:3.5s;
+  -moz-transition-delay:3.5s;
+}
+
+span:nth-child(7)
+{
+  animation-delay:4.2s;
+  -webkit-animation-delay:4.2s;
+  -moz-transition-delay:4.2s;
+}
+span:nth-child(8)
+{
+  animation-delay:4.9s;
+  -webkit-animation-delay:4.9s;
+  -moz-transition-delay:4.9s;
+}
+span:nth-child(9)
+{
+  animation-delay:5.6s;
+  -webkit-animation-delay:5.6s;
+  -moz-transition-delay:5.6s;
+}
+span:nth-child(10)
+{
+  animation-delay:6.3s;
+  -webkit-animation-delay:6.3s;
+  -moz-transition-delay:6.3s;
+}
+
+span:nth-child(11)
+{
+  animation-delay:7s;
+  -webkit-animation-delay:7s;
+  -moz-transition-delay:7s;
+}
+
+span:nth-child(12)
+{
+  animation-delay:7.7s;
+  -webkit-animation-delay:7.7s;
+  -moz-transition-delay:7.7s;
+}
+
+
+</style>
+
+</HEAD>
+
+<body>
+
+
+<div class="Cont">
+<video src="animation.mp4" autoplay muted></video>
+
+ <div class="text">
+ 
+<span>M</span>
+<span>I</span>
+<span>N</span>
+<span>D</span>
+<span></span>
+<span>T</span>
+<span>H</span>
+<span>E</span>
+<span>R</span>
+<span>A</span>
+<span>P</span>
+<span>Y</span>
+ 
+ </div>
+
+<div id="timecount"></div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+</Html>
