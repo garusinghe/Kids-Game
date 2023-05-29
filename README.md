@@ -1,5 +1,35 @@
-# Kids-Game
-That game is   kids Educational Game 
-That can improve Memory power of the Kids.
-An also kids can calculation and Go Untile  Refresh their memory.
-kids's can Make Puzzels and can win the Medals.
+![Screenshot (272)](https://github.com/garusinghe/Kids-Game/assets/91825377/941d1848-8b09-4f21-8bcf-d3508d317e5a)
+![Screenshot (273)](https://github.com/garusinghe/Kids-Game/assets/91825377/5862de27-ed10-4be4-887e-20c9dfee7b02)
+![Screenshot (274)](https://github.com/garusinghe/Kids-Game/assets/91825377/e5f68b3d-2f01-410a-9ee7-743293325958)
+![Screenshot (275)](https://github.com/garusinghe/Kids-Game/assets/91825377/dfbec6d3-a663-4b1d-8a17-9f3bf186037d)
+![Screenshot (276)](https://github.com/garusinghe/Kids-Game/assets/91825377/97249ef6-f073-4ea6-a6b9-5ab75fa504d8)
+![Screenshot (277)](https://github.com/garusinghe/Kids-Game/assets/91825377/12f8cb6c-affb-4f2a-a2e3-e8f4c722a2dd)
+![Screenshot (278)](https://github.com/garusinghe/Kids-Game/assets/91825377/bbcf8612-15e3-410f-a4c0-c9aa86c1fc18)
+![Screenshot (279)](https://github.com/garusinghe/Kids-Game/assets/91825377/4acdca16-7025-436f-8e8d-133b87cf8297)
+![Screenshot (280)](https://github.com/garusinghe/Kids-Game/assets/91825377/3b8172d2-5587-44ae-8bc3-291ddc15208e)
+![Screenshot (281)](https://github.com/garusinghe/Kids-Game/assets/91825377/8d6106dd-f795-4e71-a3db-2d7d6731d33d)
+![Screenshot (282)](https://github.com/garusinghe/Kids-Game/assets/91825377/5a965e21-280e-4d5c-a314-67d113e4c6b0)
+![Screenshot (283)](https://github.com/garusinghe/Kids-Game/assets/91825377/9dd66e93-7645-4be6-936d-5808cf93b831)
+![Screenshot (284)](https://github.com/garusinghe/Kids-Game/![Screenshot (285)](https://github.com/garusinghe/Kids-Game/assets/91825377/8f7adf91-9ef2-4dc6-849d-30b05791df97)
+assets/91825377/7e172c3f-2091-4d6f-bc60-c4e848ecfb38)
+![Screenshot (285)](https://github.com/garusinghe/Kids-Game/assets/91825377/0cdbe0d1-7fef-4988-b16d-5b390fb50756)
+
+![Screenshot (286)](https://github.com/garusinghe/Kids-Game![Screenshot (287)](https://github.com/garusinghe/Kids-Game/assets/91825377/1db5b9b4-242c-4e23-a998-d3c01ef998e3)
+/assets/91825377/0b3e3db8-4f38-4fe9-8ce9-fcb99296f9b5)
+
+![Screenshot (288)](https://github.com/garusinghe/Kids-Game/assets/91825377/a919da9c-49d2-4a6c-b051-a0eb3800d368)
+
+![Screenshot (289)](https://github.com/garusinghe/Kids-Game/assets/91825377/1f7f264a-bae6-42a0-aa54-19473b19ad49)
+
+![Screenshot (290)](https://github.com/garusinghe/Kids-Game/assets/91825377/c940ce9c-2ce6-4d2b-aae8-674f95507697)
+![Screenshot (291)](https://github.com/garusinghe/Kids-Game/assets/91825377/1b9ce4f6-2b03-4444-947d-90358b3276be)
+![Screenshot (292)](https://github.com/garusinghe/Kids-Game/assets/91825377/3f77dc18-8d4f-40fc-87ef-ba3fc9287860)
+![Screenshot (293)](https://github.com/garusinghe/Kids-Game/assets/91825377/fdef587e-0830-4ec3-951e-390c35c37dec)
+![Screenshot (294)](https://github.com/garusinghe/Kids-Game/assets/91825377/ec336721-25a7-4b3c-954a-d1592172278a)
+
+![Screenshot (295)](https://github.com/garusinghe/Kids-Game/as![Screenshot (296)](https://github.com/garusinghe/Kids-Game/assets/91825377/7328b7d3-d321-43d4-81c0-f30fb2f00af6)
+sets/91825377/6377575d-30b7-4826-b394-b3f7a4fca922)
+![Screenshot (297)](https://github.com/garusinghe/Kids-Game/a![Screenshot (298)](https://github.com/garusinghe/Kids-Game/assets/91825377/ebfea15b-9f1e-4db0-a492-fd6fb0ea7c5b)
+ssets/91825377/b5f91a1d-7547-44cd-9bb6-b59bcfbe19a0)
+
+![Screenshot (299)](https://github.com/garusinghe/Kids-Game/assets/91825377/de4584e6-1ace-40d7-809d-7669bb880c70)
